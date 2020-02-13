@@ -53,7 +53,20 @@ Alle JUnit-Tests siedeln somit an unter:
 Es empfiehlt sich, diesen Pfad in der IDE Ihrer Wahl explizit als **Test Resources Root** zu definieren.
 
 
-## 3. Bauen und Starten der Anwendung
+## 3. Kompilieren und starten der Anwendung und der Tests
+
+### 3.1. Anwendung kompilieren und starten
+
+Der folgende Befehl kompiliert die Projektsources und startet die Anwendung:
+
+`gradle run`
+
+Es sollte ein `Hello world.` auf der Konsole ausgegeben werden.
+
+
+### 3.2. Tests
+
+
 
 
 
