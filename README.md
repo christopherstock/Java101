@@ -1,13 +1,24 @@
 
-# Systemvorraussetzungen
+# Java 101
 
-Gradle 6.1.1
-JDK 13.0.1
+Dieser Java-Workshop behandelt alle wichtigsten Grundlagen von Java. Mit Hilfe des Paketmanagers Gradle erstellen Sie
+ ein neues Java-Projekt von Grund auf. Erstellt wird eine kleine UI-Anwendung, mit der auf Knopfdruck ein Witz aus der
+ International Chuck Norris Database angefordert und in unserer Anwendung angezeigt wird. Für das Handling der HTTP-
+ Request- u. -Responses soll eine moderne Java Bibliothek verwendet werden.
 
+<hr>
 
-# Projekt-Setup
+## Systemvorraussetzungen
 
-## 1. Gradle-Projekt anlegen
+- Gradle 6.1.1
+- JDK 13.0.1
+- JUnit 4.12
+
+<hr>
+
+## Projekt-Setup
+
+### 1. Gradle-Projekt anlegen
 
 Erstellen Sie einen neuen Ordner mit einem beliebigen Namen für das Projekt. Wechseln Sie in diesen Ordner und
  initialisieren Sie ein neues Gradle-Projekt mit dem folgenden Befehl:
@@ -24,7 +35,7 @@ Bitte beantworten Sie die Rückfragen der Konsole wie folgt:
 - Source package: `de.mayflower.java101`
 
 
-## 2. Projektstruktur
+### 2. Projektstruktur
 
 ### 2.1. Hauptklasse
 
@@ -53,7 +64,7 @@ Alle JUnit-Tests siedeln somit an unter:
 Es empfiehlt sich, diesen Pfad in der IDE Ihrer Wahl explizit als **Test Resources Root** zu definieren.
 
 
-## 3. Kompilieren und starten der Anwendung und der Tests
+### 3. Kompilieren und starten der Anwendung und der Tests
 
 ### 3.1. Anwendung kompilieren und starten
 
@@ -72,6 +83,12 @@ Alle JUnit-Tests können mit dem folgenden Befehl ausgeführt werden:
 
 Laufen alle Tests korrekt durch, so wird lediglich `BUILD SUCCESSFUL` auf der Konsole ausgegeben. Es erfolgt keine
  explizite Ausgabe für die einzelnen Tests.
+
+<hr>
+
+## Development
+
+
 
 
 
