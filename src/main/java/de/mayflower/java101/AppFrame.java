@@ -1,8 +1,15 @@
 
     package de.mayflower.java101;
 
+    import com.google.api.client.http.GenericUrl;
+    import com.google.api.client.http.HttpRequest;
+    import com.google.api.client.http.HttpRequestFactory;
+    import com.google.api.client.http.HttpResponse;
+    import com.google.api.client.http.javanet.NetHttpTransport;
+
     import java.awt.event.ActionEvent;
     import java.awt.event.ActionListener;
+    import java.net.http.HttpClient;
 
     import javax.swing.JButton;
     import javax.swing.JFrame;
@@ -49,8 +56,17 @@
         {
             System.out.println( "Button clicked - Request a Joke!" );
 
+            try
+            {
+                GenericUrl url = new GenericUrl( "http://api.icndb.com/jokes/random" );
+                HttpRequest request = new NetHttpTransport().createRequestFactory().buildGetRequest( url );
+                HttpResponse response = request.execute();
 
-
-
+                System.out.println( new String( response.getContent().readAllBytes() ) );
+            }
+            catch ( Throwable t )
+            {
+                t.printStackTrace();
+            }
         }
     }

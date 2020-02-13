@@ -8,11 +8,12 @@ Dieser Java-Workshop behandelt alle wichtigsten Grundlagen von Java. Mit Hilfe d
 
 <hr>
 
-## Systemvorraussetzungen
+## Tech Stack
 
 - Gradle 6.1.1
 - JDK 13.0.1
 - JUnit 4.12
+- Google HTTP Client 1.34.1
 
 <hr>
 
@@ -88,13 +89,17 @@ Laufen alle Tests korrekt durch, so wird lediglich `BUILD SUCCESSFUL` auf der Ko
 
 <hr>
 
-## Coding DOJO 
+## Coding DOJO
 
 1. Anlegen eines neuen Gradle-Projekts.
 2. Starten der Anwendung und Ausführen der Tests.
 3. Erstellen einer neuen Klasse AppFrame in der main-Methode und Aufrufen deren nicht-statischer Methode `show()`.
-
-
-
-
+4. Erstellen und Konfektionieren einer JFrame Instanz mit einer beinhaltenden JPanel Instanz. 
+5. Erstellen und Konfektionieren eines JButtons und eines JTextFields und Hinzufügen zum JPanel.
+6. Erstellen eines ActionListeners, Zuweisen auf den JButton und Ausgabe einer Konsolenausgabe beim Klicken auf den 
+ Button.
+7. Installation der aktuellsten Version der Library `google-http-client` via Gradle.
+8. Einbauen eines GET-Requests zum Requesten eines zufälligen Witzes aus der International Chuck Norris Database
+ URL: `http://api.icndb.com/jokes/random`
+9. Der Response Body soll als String in der Konsole ausgegeben werden.
 
