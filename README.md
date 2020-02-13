@@ -66,18 +66,12 @@ Es sollte ein `Hello world.` auf der Konsole ausgegeben werden.
 
 ### 3.2. Tests
 
+Alle JUnit-Tests können mit dem folgenden Befehl ausgeführt werden:
 
+`gradle test`
 
-
-
-
-
-
-
-
-
-
-
+Laufen alle Tests korrekt durch, so wird lediglich `BUILD SUCCESSFUL` auf der Konsole ausgegeben. Es erfolgt keine
+ explizite Ausgabe für die einzelnen Tests.
 
 
 
