@@ -3,13 +3,15 @@
 
     import com.google.api.client.http.GenericUrl;
     import com.google.api.client.http.HttpRequest;
-    import com.google.api.client.http.HttpRequestFactory;
-    import com.google.api.client.http.HttpResponse;
     import com.google.api.client.http.javanet.NetHttpTransport;
+    import com.google.api.client.json.JsonFactory;
+    import com.google.api.client.json.JsonObjectParser;
+    import com.google.api.client.json.jackson.JacksonFactory;
+    import com.google.api.client.testing.json.MockJsonFactory;
+    import com.google.api.client.util.ObjectParser;
 
     import java.awt.event.ActionEvent;
     import java.awt.event.ActionListener;
-    import java.net.http.HttpClient;
 
     import javax.swing.JButton;
     import javax.swing.JFrame;
@@ -60,9 +62,11 @@
             {
                 GenericUrl url = new GenericUrl( "http://api.icndb.com/jokes/random" );
                 HttpRequest request = new NetHttpTransport().createRequestFactory().buildGetRequest( url );
-                HttpResponse response = request.execute();
+                request.setParser( new JsonObjectParser( new JacksonFactory() ) );
+                JokeResponse response = request.execute().parseAs( JokeResponse.class );
 
-                System.out.println( new String( response.getContent().readAllBytes() ) );
+                System.out.println( response.type );
+
             }
             catch ( Throwable t )
             {

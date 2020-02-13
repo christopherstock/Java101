@@ -102,4 +102,5 @@ Laufen alle Tests korrekt durch, so wird lediglich `BUILD SUCCESSFUL` auf der Ko
 8. Einbauen eines GET-Requests zum Requesten eines zufälligen Witzes aus der International Chuck Norris Database
  URL: `http://api.icndb.com/jokes/random`
 9. Der Response Body soll als String in der Konsole ausgegeben werden.
-
+10. Der Response Body soll automatisch in eine Instanz der neuen Klasse JokeResponse geparsed werden, welche die
+ Struktur des JSON-Response-Bodies repräsentiert.
