@@ -4,11 +4,8 @@
     import com.google.api.client.http.GenericUrl;
     import com.google.api.client.http.HttpRequest;
     import com.google.api.client.http.javanet.NetHttpTransport;
-    import com.google.api.client.json.JsonFactory;
     import com.google.api.client.json.JsonObjectParser;
     import com.google.api.client.json.jackson.JacksonFactory;
-    import com.google.api.client.testing.json.MockJsonFactory;
-    import com.google.api.client.util.ObjectParser;
 
     import java.awt.event.ActionEvent;
     import java.awt.event.ActionListener;
@@ -65,8 +62,7 @@
                 request.setParser( new JsonObjectParser( new JacksonFactory() ) );
                 JokeResponse response = request.execute().parseAs( JokeResponse.class );
 
-                System.out.println( response.type );
-
+                textArea.setText( response.value.joke );
             }
             catch ( Throwable t )
             {

@@ -95,7 +95,8 @@ Laufen alle Tests korrekt durch, so wird lediglich `BUILD SUCCESSFUL` auf der Ko
 2. Starten der Anwendung und Ausführen der Tests.
 3. Erstellen einer neuen Klasse AppFrame in der main-Methode und Aufrufen deren nicht-statischer Methode `show()`.
 4. Erstellen und Konfektionieren einer JFrame Instanz mit einer beinhaltenden JPanel Instanz. 
-5. Erstellen und Konfektionieren eines JButtons und eines JTextFields und Hinzufügen zum JPanel.
+5. Erstellen und Konfektionieren eines JButtons und eines JTextFields und Hinzufügen zum JPanel. Das Textfeld soll
+ read-only sein.
 6. Erstellen eines ActionListeners, Zuweisen auf den JButton und Ausgabe einer Konsolenausgabe beim Klicken auf den 
  Button.
 7. Installation der aktuellsten Version der Library `google-http-client` via Gradle.
@@ -104,3 +105,4 @@ Laufen alle Tests korrekt durch, so wird lediglich `BUILD SUCCESSFUL` auf der Ko
 9. Der Response Body soll als String in der Konsole ausgegeben werden.
 10. Der Response Body soll automatisch in eine Instanz der neuen Klasse JokeResponse geparsed werden, welche die
  Struktur des JSON-Response-Bodies repräsentiert.
+11. Der Witz soll im Ausgabefeld angezeigt werden.

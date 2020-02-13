@@ -7,4 +7,19 @@
     {
         @Key( "type" )
         public String type;
+
+        @Key( "value" )
+        public Value value;
+
+        public static class Value
+        {
+            @Key( "id" )
+            public int id;
+
+            @Key( "joke" )
+            public String joke;
+
+            @Key( "categories" )
+            public String[] categories;
+        }
     }
