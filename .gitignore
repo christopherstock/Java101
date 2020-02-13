@@ -1,0 +1,12 @@
+
+#macOS
+.DS_Store
+
+# Gradle settings
+.gradle
+
+# IntelliJ
+.idea
+
+# Gradle build output
+build
