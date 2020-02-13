@@ -1,12 +1,15 @@
 
     package de.mayflower.java101;
 
+    import java.awt.event.ActionEvent;
+    import java.awt.event.ActionListener;
+
     import javax.swing.JButton;
     import javax.swing.JFrame;
     import javax.swing.JPanel;
     import javax.swing.JTextField;
 
-    public class AppFrame
+    public class AppFrame implements ActionListener
     {
         private JFrame  frame;
         private JPanel  panel;
@@ -22,6 +25,7 @@
 
             jokeButton = new JButton();
             jokeButton.setText( "Request Joke" );
+            jokeButton.addActionListener( this );
 
             textArea = new JTextField();
             textArea.setColumns( 100 );
@@ -38,5 +42,15 @@
         public void show()
         {
             frame.setVisible( true );
+        }
+
+        @Override
+        public void actionPerformed( ActionEvent e )
+        {
+            System.out.println( "Button clicked - Request a Joke!" );
+
+
+
+
         }
     }
