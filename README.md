@@ -96,7 +96,7 @@ Laufen alle Tests korrekt durch, so wird lediglich `BUILD SUCCESSFUL` auf der Ko
 
 ## Development
 
-Die folgenden Aufhaben können im Rahmen eines Coding DOJOs oder im Workshopformat durchgeführt werden:
+Die folgenden Aufhaben können im Rahmen eines Coding Dojos oder im Workshopformat durchgeführt werden:
 
 1. Instanziieren Sie die neue Klasse `AppFrame` in der `main`-Methode und rufen Sie deren nicht-statischer Methode
  `show()` auf.
