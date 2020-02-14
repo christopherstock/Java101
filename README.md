@@ -1,10 +1,10 @@
 
 # Java 101
 
-Dieser Java-Workshop behandelt alle wichtigsten Grundlagen von Java. Mit Hilfe des Paketmanagers Gradle erstellen Sie
- ein neues Java-Projekt von Grund auf. Erstellt wird eine kleine UI-Anwendung, mit der auf Knopfdruck ein Witz aus der
- International Chuck Norris Database angefordert und in unserer Anwendung angezeigt wird. Für das Handling der HTTP-
- Request- u. -Responses soll eine moderne Java Bibliothek verwendet werden.
+Dieser Java-Workshop behandelt die wichtigsten Grundlagen der Programmiersprache Java. Mit Hilfe des Paketmanagers 
+ **Gradle** erstellen wir ein neues Java-Projekt von Grund auf. Entwickelt wird eine kleine UI-Anwendung, mit der
+ auf Knopfdruck ein Witz aus der **International Chuck Norris Database** angefordert und in unserer Anwendung
+ angezeigt wird. Für das Handling der HTTP-Request- u. -Responses soll eine moderne Java Bibliothek verwendet werden.
 
 <hr>
 
@@ -42,12 +42,12 @@ Bitte beantworten Sie die Rückfragen der Konsole wie folgt:
 
 ### 2.1. Hauptklasse
 
-Die Hauptklasse und deren statische **main**-Methode stellt den Einstieg in unsere Anwendung dar. Sie wurde von Gradle
- erstellt unter:
+Die Hauptklasse und deren statische **main**-Methode stellt den Einstieg in unsere Anwendung dar. Die Hauptklasse wurde
+ von Gradle erstellt unter:
 
 `src/main/java/de/mayflower/java101/App.java`
 
-Alle Sourcecodes siedeln somit an unter:
+Alle Sourcecodes für das Projekt siedeln somit an unter:
 
 `src/main/java`
 
@@ -60,7 +60,7 @@ Ein Beispiel JUnit-Test wurde von Gradle bereits erstellt unter:
 
 `src/test/java/de/mayflower/java101/AppTest.java`
 
-Alle JUnit-Tests siedeln somit an unter:
+Alle JUnit-Tests siedeln an unter:
 
 `src/test/java`
 
@@ -75,7 +75,7 @@ Der folgende Befehl kompiliert die Projektsources und startet die Anwendung:
 
 `gradle run`
 
-Es sollte ein `Hello world.` auf der Konsole ausgegeben werden.
+In der Konsolenausgabe sollte nun ein `Hello world.` zu sehen sein.
 
 
 ### 3.2. Tests
@@ -85,24 +85,27 @@ Alle JUnit-Tests können mit dem folgenden Befehl ausgeführt werden:
 `gradle test`
 
 Laufen alle Tests korrekt durch, so wird lediglich `BUILD SUCCESSFUL` auf der Konsole ausgegeben. Es erfolgt keine
- explizite Ausgabe für die einzelnen Tests.
+ explizite Ausgabe der einzeln durchgeführten Tests.
 
 <hr>
 
-## Coding DOJO
+## Development
 
-1. Anlegen eines neuen Gradle-Projekts.
-2. Starten der Anwendung und Ausführen der Tests.
-3. Erstellen einer neuen Klasse AppFrame in der main-Methode und Aufrufen deren nicht-statischer Methode `show()`.
-4. Erstellen und Konfektionieren einer JFrame Instanz mit einer beinhaltenden JPanel Instanz. 
-5. Erstellen und Konfektionieren eines JButtons und eines JTextFields und Hinzufügen zum JPanel. Das Textfeld soll
- read-only sein.
-6. Erstellen eines ActionListeners, Zuweisen auf den JButton und Ausgabe einer Konsolenausgabe beim Klicken auf den 
- Button.
-7. Installation der aktuellsten Version der Library `google-http-client` via Gradle.
-8. Einbauen eines GET-Requests zum Requesten eines zufälligen Witzes aus der International Chuck Norris Database
- URL: `http://api.icndb.com/jokes/random`
-9. Der Response Body soll als String in der Konsole ausgegeben werden.
-10. Der Response Body soll automatisch in eine Instanz der neuen Klasse JokeResponse geparsed werden, welche die
- Struktur des JSON-Response-Bodies repräsentiert.
-11. Der Witz soll im Ausgabefeld angezeigt werden.
+Die folgenden Aufhaben können im Rahmen eines Coding DOJOs oder im Workshopformat durchgeführt werden:
+
+1. Instanziieren Sie die neue Klasse `AppFrame` in der `main`-Methode und rufen Sie deren nicht-statischer Methode
+ `show()` auf.
+2. Erstellen und Konfektionieren Sie eine Instanz von `JFrame` im Konstruktor der Klasse `AppFrame` und fügen Sie dem
+ `JFrame` eine Instanz von `JPanel` hinzu. 
+3. Erstellen und Konfektionieren Sie einen `JButton` und ein `JTextField` und fügen Sie die beiden Objekte zum
+ `JPanel` hinzu. Das Textfeld soll `read-only` sein.
+4. Fügen Sie dem Button einen `ActionListener` hinzu, als der die Klasse `AppFrame` fungieren soll.
+ Beim Klick auf den `JButton` soll vorerst eine Ausgabe auf der Ausgabekonsole erscheinen.
+5. Installieren Sie die aktuellste Version der Bibliothek `google-http-client` aus dem Maven Repository via Gradle.
+6. Erstellen Sie beim Klick auf den Button einen GET-Request zum Requesten eines zufälligen Witzes aus der 
+ **International Chuck Norris Database** unter der URL `http://api.icndb.com/jokes/random`.
+7. Geben Sie den Response Body als String in der Konsole aus.
+8. Fügen Sie das automatische Parsen des Response Bodies in eine Instanz der neuen Klasse **JokeResponse** hinzu.
+ Diese Datenklasse soll die Struktur des JSON-Response-Bodies repräsentieren.
+9. Zeigen Sie den Witz im Ausgabefeld an.
+10. Lagern Sie die Funktionalität des Request- und des Response-Handlings in eine neue Klasse API aus.

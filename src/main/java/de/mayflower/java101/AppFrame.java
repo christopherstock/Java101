@@ -15,13 +15,23 @@
     import javax.swing.JPanel;
     import javax.swing.JTextField;
 
+    /*******************************************************************************************************************
+    *   The Application frame contains all UI Components the application makes use of.
+    *******************************************************************************************************************/
     public class AppFrame implements ActionListener
     {
+        /** The application's UI frame. */
         private JFrame  frame;
+        /** The UI panel being contained in the application's UI frame. */
         private JPanel  panel;
+        /** The button that shall request a joke on being clicked. */
         private JButton jokeButton;
+        /** The text field that shows the joke after being requested. */
         private JTextField textArea;
 
+        /***************************************************************************************************************
+        *   Creates all UI components for the app.
+        ***************************************************************************************************************/
         public AppFrame()
         {
             frame = new JFrame();
@@ -45,11 +55,19 @@
             frame.pack();
         }
 
+        /***************************************************************************************************************
+        *   Shows the application's UI frame.
+        ***************************************************************************************************************/
         public void show()
         {
             frame.setVisible( true );
         }
 
+        /***************************************************************************************************************
+        *   Being invoked when the 'Request Joke' button is clicked.
+        *
+        *   @param e The ActionEvent instance that contains all information about the button click event.
+        ***************************************************************************************************************/
         @Override
         public void actionPerformed( ActionEvent e )
         {

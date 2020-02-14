@@ -3,6 +3,10 @@
 
     import com.google.api.client.util.Key;
 
+    /*******************************************************************************************************************
+    *   Represents the JSON response body for a call to the International Chuck Norris Database
+    *   for requesting a random joke from http://api.icndb.com/jokes/random.
+    *******************************************************************************************************************/
     public class JokeResponse
     {
         @Key( "type" )
