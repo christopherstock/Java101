@@ -1,6 +1,8 @@
 
 # Java 101
 
+![Java](https://github.com/christopherstock/Java101/raw/master/_ASSET/readme/logo_java.png)
+
 Dieser Java-Workshop behandelt die wichtigsten Grundlagen der Programmiersprache Java. Mit Hilfe des Paketmanagers 
  **Gradle** erstellen wir ein neues Java-Projekt von Grund auf. Entwickelt wird eine kleine UI-Anwendung, mit der
  auf Knopfdruck ein Witz aus der **International Chuck Norris Database** angefordert und in unserer Anwendung
@@ -19,9 +21,9 @@ Dieser Java-Workshop behandelt die wichtigsten Grundlagen der Programmiersprache
 
 ## Projekt-Setup
 
-### 1. Gradle-Projekt anlegen
+![gradle](https://github.com/christopherstock/Java101/raw/master/_ASSET/readme/logo_gradle.png)
 
-![gradle](https://github.com/christopherstock/AntDesignPrimer/raw/master/_ASSET/readme/150px/logo_npm.png)
+### 1. Gradle-Projekt anlegen
 
 Erstellen Sie einen neuen Ordner mit einem beliebigen Namen für das Projekt. Wechseln Sie in diesen Ordner und
  initialisieren Sie ein neues Gradle-Projekt mit dem folgenden Befehl:
@@ -53,6 +55,7 @@ Alle Sourcecodes für das Projekt siedeln somit an unter:
 
 Es empfiehlt sich, diesen Pfad in der IDE Ihrer Wahl explizit als **Sources Root** zu definieren.
 
+![Junit](https://github.com/christopherstock/Java101/raw/master/_ASSET/readme/logo_junit.png)
 
 ### 2.2. Tests
 
@@ -88,6 +91,8 @@ Laufen alle Tests korrekt durch, so wird lediglich `BUILD SUCCESSFUL` auf der Ko
  explizite Ausgabe der einzeln durchgeführten Tests.
 
 <hr>
+
+![The International Chuck Norris Database](https://github.com/christopherstock/Java101/raw/master/_ASSET/readme/chuck.jpg)
 
 ## Development
 
